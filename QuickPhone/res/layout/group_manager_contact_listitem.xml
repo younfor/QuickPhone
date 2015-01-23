@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:background="@drawable/mm_listitem"
+>
+		 <LinearLayout  
+		        android:id="@+id/sort_key_layout"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="18dip"  
+		        android:background="#dcdcdc" >  
+		  
+		        <TextView  
+		            android:id="@+id/sort_key"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"  
+		            android:layout_gravity="center_horizontal"  
+		            android:layout_marginLeft="10dip"  
+		            android:textColor="#8b4513"  
+		            android:textSize="13sp" />  
+		    </LinearLayout>  
+		     <RelativeLayout  
+	        android:id="@+id/name_layout"  
+	        android:layout_width="fill_parent"  
+	        
+	        android:layout_height="50dip" >  
+
+	        <ImageView  
+	            android:id="@+id/contact_headIcon"  
+	            android:layout_width="45dp"  
+	            android:layout_height="45dp" 
+	            android:layout_gravity="center_vertical"  
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dip"  
+	            android:layout_marginRight="10dip"  
+	            android:src="@drawable/icon_contact" />  
+	  
+	        <TextView  
+	            android:id="@+id/listview_title"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:layout_toRightOf="@+id/contact_headIcon"
+	            android:layout_centerInParent="true"
+	            android:textColor="#000"  
+	            android:text="Seven"
+	            android:textSize="22sp" />  
+	         <TextView
+	            android:id="@+id/listview_phone" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="17dp"
+                android:text="10086"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/listview_title"
+                android:textColor="#666" />
+	         <Button
+	            android:id="@+id/btn_change_contact"
+	            android:layout_width="60dp"  
+		        android:layout_height="30dp"  
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="30dp"
+	            android:text="移入"
+	            android:textSize="14sp"
+	            android:textColor="#fff"
+	            android:focusable="false"
+	            android:clickable="false"
+	            android:background="@drawable/btn_style_red"
+			    />    
+   			 </RelativeLayout>  
+
+</LinearLayout>

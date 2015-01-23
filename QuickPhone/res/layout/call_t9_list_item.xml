@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/mm_listitem"
+    android:orientation="vertical">
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="小张"
+            android:textAppearance="?android:textAppearanceMedium"
+           android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="18616321443\n10086"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#666" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/call_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/tab_dial_selected" />
+	 <TextView
+        android:id="@+id/sms_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/call_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/tab_voice_selected" />
+    <ImageView
+        android:id="@+id/fg"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_toLeftOf="@+id/call_btn"
+        android:layout_toRightOf="@+id/sms_btn"
+        android:background="@drawable/black_bg" />
+
+    <TextView
+        android:id="@+id/pinyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/sms_btn"
+        android:layout_marginRight="20dp"
+        android:text="8-10 21:00"
+        android:textColor="#666" />
+    
+
+</RelativeLayout>

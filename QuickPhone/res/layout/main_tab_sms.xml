@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+       android:gravity="center_vertical"  >
+		<Button
+           android:layout_width="70dp"
+            android:layout_height="wrap_content"
+     
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_left"
+            android:text="编辑 "
+            android:textColor="#fff"
+            android:onClick="btn_editSMS"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/title_btn_right"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:onClick="addGroupSMS"
+            android:text="+"
+            />
+    </RelativeLayout>
+	<ListView
+        android:id="@+id/sms_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:choiceMode="singleChoice"
+        android:fastScrollEnabled="true"
+        android:soundEffectsEnabled="true" />
+</LinearLayout>
